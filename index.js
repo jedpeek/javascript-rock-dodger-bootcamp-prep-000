@@ -63,7 +63,9 @@ function createRock(x) {
 function endGame() {
   clearInterval(gameInterval)
 
-  ROCKS.forEach(function(rock) {rock.remove() })
+  ROCKS.forEach(function(rock) {
+    rock.remove()
+  })
 
   window.removeEventListener('keydown', moveDodger)
   var loser = ["Try Again?", "Practice Makes Perfect", "Winning Isn't Everything", "You Lose"]
