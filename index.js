@@ -80,7 +80,6 @@ function endGame() {
 
 
 function moveDodger(e) {
-    window.addEventListener('keydown', function(e) {
     if (e.which === LEFT_ARROW) {
       moveDodgerLeft();
     }
