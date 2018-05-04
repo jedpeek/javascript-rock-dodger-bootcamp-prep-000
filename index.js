@@ -96,24 +96,28 @@ function moveDodger(e){
 function moveDodgerLeft() {
   var left = parseInt(dodger.style.left.replace("px",""));
 
+  function step() {
     if (left > 0) {
     dodger.style.left = `${left -= 4}px`
 
 
       window.requestAnimationFrame(step)
     }
+  }
   window.requestAnimationFrame(step)
 }
 
 function moveDodgerRight() {
   var right = parseInt(dodger.style.left.replace("px",""));
 
+  function step() {
     if (right < 360) {
     dodger.style.left = `${right += 4}px`
 
 
       window.requestAnimationFrame(step)
     }
+  }
   window.requestAnimationFrame(step)
 }
 
