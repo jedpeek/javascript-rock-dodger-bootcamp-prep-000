@@ -68,10 +68,12 @@ function endGame() {
   })
 
   window.removeEventListener('keydown', moveDodger)
+
   var loser = ["Try Again?", "Practice Makes Perfect", "Winning Isn't Everything", "You Lose"]
   START.innerHTML = loser[Math.floor(Math.random()*4)]
   START.style.display = 'inline'
-DODGER.remove();
+  count = 0;
+  console.log(count += 1)
   return alert('You Lose!')
 }
 
