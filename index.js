@@ -76,11 +76,11 @@ DODGER.remove();
 
 function moveDodger(e) {
     window.addEventListener('keydown', function(e) {
-    if (e.which === 37) {
+    if (e.which === LEFT_ARROW) {
       moveDodgerLeft()
       e.stopPropagation();
     }
-    else if (e.which === 39) {
+    else if (e.which === RIGHT_ARROW) {
       moveDodgerRight();
       e.stopPropagation();
     }
@@ -93,7 +93,7 @@ function moveDodgerLeft() {
   var left = parseInt(dodger.style.left.replace("px",""));
 
   function step() {
-  dodger.style.left = `${left -= 4}px`
+    dodger.style.left = `${left -= 4}px`
 
     if (left > 0) {
       window.requestAnimationFrame(step)
