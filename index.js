@@ -78,9 +78,11 @@ function moveDodger(e) {
     window.addEventListener('keydown', function(e) {
     if (e.which === 37) {
       moveDodgerLeft()
+      e.stopPropagation();
     }
     else if (e.which === 39) {
-      moveDodgerRight()
+      moveDodgerRight();
+      e.stopPropagation();
     }
   })
 }
