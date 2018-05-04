@@ -62,17 +62,16 @@ function createRock(x) {
 
 function endGame() {
   clearInterval(gameInterval)
-
   ROCKS.forEach(function(rock){
     rock.remove()
-  })
+  });
 
-  window.removeEventListener('keydown', moveDodger)
+  window.removeEventListener('keydown', moveDodger);
 
   var loser = ["Try Again?", "Practice Makes Perfect", "Winning Isn't Everything", "You Lose"]
   START.innerHTML = loser[Math.floor(Math.random()*4)]
   START.style.display = 'inline'
-  count = 0;
+
   DODGER.remove();
 
   return alert('You Lose!')
