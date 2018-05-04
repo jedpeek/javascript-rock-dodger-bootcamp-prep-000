@@ -101,9 +101,6 @@ function moveDodgerLeft() {
     if (left > 0) {
       window.requestAnimationFrame(step)
     }
-    else{
-      dodger.style.left = left;
-    }
   }
   window.requestAnimationFrame(step)
 }
@@ -116,9 +113,6 @@ function moveDodgerRight() {
 
     if (right < 360) {
       window.requestAnimationFrame(step)
-    }
-    else{
-      dodger.style.left = right;
     }
   }
   window.requestAnimationFrame(step)
