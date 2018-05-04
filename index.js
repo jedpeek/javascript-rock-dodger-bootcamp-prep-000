@@ -99,6 +99,7 @@ function moveDodgerLeft() {
       window.requestAnimationFrame(step)
     }
   }
+  window.requestAnimationFrame(step)
 }
 
 function moveDodgerRight() {
@@ -111,6 +112,7 @@ function moveDodgerRight() {
       window.requestAnimationFrame(step)
     }
   }
+  window.requestAnimationFrame(step)
 }
 
 /**
