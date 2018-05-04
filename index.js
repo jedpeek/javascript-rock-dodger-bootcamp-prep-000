@@ -101,6 +101,9 @@ function moveDodgerLeft() {
     if (left > 0) {
       window.requestAnimationFrame(step)
     }
+    else{
+      dodger.style.left = left;
+    }
   }
   window.requestAnimationFrame(step)
 }
