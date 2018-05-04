@@ -21,7 +21,7 @@
   color: white;
   font-size: 4rem;
   position: relative;
-  text-decoration: underline;
+  text-decoration: underline, red;
   top: 4rem;
 }
 
