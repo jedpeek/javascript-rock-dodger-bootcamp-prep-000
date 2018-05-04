@@ -70,7 +70,7 @@ function endGame() {
 
   var loser = ["Try Again?", "Practice Makes Perfect", "Winning Isn't Everything", "You Lose"]
   START.innerHTML = loser[Math.floor(Math.random()*4)]
-  START.style.display = 'inline'
+
 
   DODGER.remove();
 
