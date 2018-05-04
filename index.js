@@ -73,7 +73,7 @@ function endGame() {
   START.innerHTML = loser[Math.floor(Math.random()*4)]
   START.style.display = 'inline'
   count = 0;
-  delete DODGER;
+  DODGER.remove();
   console.log(count + 1)
   return alert('You Lose!')
 }
