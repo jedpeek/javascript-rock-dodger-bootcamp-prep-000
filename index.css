@@ -14,14 +14,14 @@
   position: relative;
   text-align: center;
   width: 400px;
-  border-radius: 2px
+  border-radius: 2px;
 }
 
 #start {
   color: white;
   font-size: 4rem;
   position: relative;
-  text-decoration: none;
+  text-decoration: underline;
   top: 4rem;
 }
 
