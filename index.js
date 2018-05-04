@@ -74,7 +74,7 @@ function endGame() {
   START.style.display = 'inline'
   count = 0;
   DODGER.remove();
-  console.log(count + 1)
+
   return alert('You Lose!')
 }
 
